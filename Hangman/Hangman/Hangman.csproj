@@ -82,16 +82,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman Galllows.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Hangman_Galllows_Small.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hangman Galllows-02.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Gallows Empty.bmp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HangmanGallows3.png" />

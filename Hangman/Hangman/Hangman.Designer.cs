@@ -43,6 +43,7 @@
             this.guessedLettersText = new System.Windows.Forms.TextBox();
             this.guessedLettersLabel = new System.Windows.Forms.Label();
             this.gallowsPictureBox = new System.Windows.Forms.PictureBox();
+            this.hintBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gallowsPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             this.newGameBtn.Location = new System.Drawing.Point(989, 668);
             this.newGameBtn.Name = "newGameBtn";
             this.newGameBtn.Size = new System.Drawing.Size(100, 23);
-            this.newGameBtn.TabIndex = 8;
+            this.newGameBtn.TabIndex = 0;
             this.newGameBtn.Text = "New Game";
             this.newGameBtn.UseVisualStyleBackColor = true;
             this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click);
@@ -74,7 +75,7 @@
             this.submitGuessBtn.Location = new System.Drawing.Point(883, 668);
             this.submitGuessBtn.Name = "submitGuessBtn";
             this.submitGuessBtn.Size = new System.Drawing.Size(100, 23);
-            this.submitGuessBtn.TabIndex = 9;
+            this.submitGuessBtn.TabIndex = 2;
             this.submitGuessBtn.Text = "Submit Guess";
             this.submitGuessBtn.UseVisualStyleBackColor = true;
             this.submitGuessBtn.Click += new System.EventHandler(this.submitGuessBtn_Click);
@@ -85,7 +86,8 @@
             this.guessText.Location = new System.Drawing.Point(777, 670);
             this.guessText.Name = "guessText";
             this.guessText.Size = new System.Drawing.Size(100, 20);
-            this.guessText.TabIndex = 10;
+            this.guessText.TabIndex = 1;
+            this.guessText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guessText_KeyDown);
             this.guessText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guessText_KeyPress);
             // 
             // livesLeft
@@ -210,11 +212,22 @@
             this.gallowsPictureBox.TabIndex = 21;
             this.gallowsPictureBox.TabStop = false;
             // 
+            // hintBtn
+            // 
+            this.hintBtn.Location = new System.Drawing.Point(655, 668);
+            this.hintBtn.Name = "hintBtn";
+            this.hintBtn.Size = new System.Drawing.Size(100, 23);
+            this.hintBtn.TabIndex = 3;
+            this.hintBtn.Text = "Hint";
+            this.hintBtn.UseVisualStyleBackColor = true;
+            this.hintBtn.Click += new System.EventHandler(this.hintBtn_Click);
+            // 
             // HangmanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 720);
+            this.Controls.Add(this.hintBtn);
             this.Controls.Add(this.gallowsPictureBox);
             this.Controls.Add(this.guessedLettersLabel);
             this.Controls.Add(this.guessedLettersText);
@@ -256,6 +269,7 @@
         private System.Windows.Forms.TextBox guessedLettersText;
         private System.Windows.Forms.Label guessedLettersLabel;
         private System.Windows.Forms.PictureBox gallowsPictureBox;
+        private System.Windows.Forms.Button hintBtn;
     }
 }
 
